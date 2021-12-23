@@ -1,0 +1,57 @@
+// Menu content styles
+.main__menu {
+    background: $menu-clor;
+}
+
+.menu-block {
+    display: flex;
+    align-items: center;
+}
+
+.main__menu-all {
+    width: 260px;
+    height: 67px;
+    padding: 25px 40px 25px 30px;
+    display: flex;
+    align-items: center;
+    background: #7AC751;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+    img {
+        margin-right: 15px;
+    }
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 508px;
+    margin: 0;
+    margin-left: 82px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    padding: 25px;
+    &:hover
+    {
+        background: $bg-color;
+        a{
+            color: #fff;
+        }
+    }
+    a{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #555555;
+    }
+}

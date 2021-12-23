@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+  
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__head">
+      <div class="container salom">
+        <span class="header__head-title">Welcome to our online shop</span>
+        <div class="header__head-block">
+          <select>
+            <option value="eng">English (USD)</option>
+            <option value="uz">O`zbek (UZ)</option>
+            <option value="ru">Rus (RU)</option>
+          </select>
+          <span>|</span>
+          <a href="#">Login or Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__menu container">
+      <a href="#" class="header__logo">
+        <svg width="147" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.448 30a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V13.8a.64.64 0 0 1 .144-.432.585.585 0 0 1 .432-.168h10.416c.176 0 .32.056.432.168a.585.585 0 0 1 .168.432v1.68c0 .176-.056.32-.168.432a.64.64 0 0 1-.432.144H42.16v4.56h7.224c.176 0 .32.056.432.168a.585.585 0 0 1 .168.432v1.68c0 .176-.056.32-.168.432a.64.64 0 0 1-.432.144H42.16v5.952c0 .176-.056.32-.168.432a.64.64 0 0 1-.432.144h-2.112Zm17.995.24c-1.472 0-2.632-.48-3.48-1.44-.848-.976-1.272-2.296-1.272-3.96v-6.744c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h2.112c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v6.6c0 1.984.872 2.976 2.616 2.976.832 0 1.488-.264 1.968-.792.496-.528.744-1.256.744-2.184v-6.6c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h2.112c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v11.328c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-1.944a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408v-.984c-.896 1.2-2.232 1.8-4.008 1.8Zm10.85-.24a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V18.12c0-.16.056-.296.168-.408a.523.523 0 0 1 .408-.192h1.944c.176 0 .32.056.432.168a.585.585 0 0 1 .168.432v.984a3.807 3.807 0 0 1 1.44-1.176c.592-.272 1.264-.408 2.016-.408h.984c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v1.728c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-1.872c-.752 0-1.344.216-1.776.648-.432.432-.648 1.024-.648 1.776v6.6c0 .16-.056.296-.168.408a.585.585 0 0 1-.432.168h-2.088ZM78.3 30a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V18.096c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h1.968c.16 0 .296.056.408.168a.555.555 0 0 1 .168.408v.984c.944-1.2 2.28-1.8 4.008-1.8 1.472 0 2.64.488 3.504 1.464.864.96 1.296 2.272 1.296 3.936v6.744c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-2.112a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408v-6.6c0-.944-.232-1.672-.696-2.184-.448-.528-1.104-.792-1.968-.792-.848 0-1.52.264-2.016.792-.48.528-.72 1.256-.72 2.184v6.6c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168H78.3Zm14.88-14.544a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408v-1.728c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h2.184c.16 0 .296.056.408.168a.523.523 0 0 1 .192.408v1.728c0 .16-.056.296-.168.408a.585.585 0 0 1-.432.168h-2.184ZM93.277 30a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V18.096c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h1.992c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v11.328c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-1.992Zm6.352 0a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V13.536c0-.176.056-.312.168-.408a.555.555 0 0 1 .408-.168h1.944c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v8.208l4.032-3.816a3 3 0 0 0 .24-.192.899.899 0 0 1 .288-.168c.096-.032.216-.048.36-.048h2.232c.16 0 .288.048.384.144a.519.519 0 0 1 .144.384c0 .144-.08.288-.24.432l-4.944 4.632 5.544 5.952c.16.16.24.296.24.408a.48.48 0 0 1-.168.384.488.488 0 0 1-.36.144h-2.28c-.224 0-.392-.024-.504-.072a2.812 2.812 0 0 1-.384-.336l-4.584-4.824v4.656c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-1.944Zm13.076-14.544a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408v-1.728c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h2.184c.16 0 .296.056.408.168a.523.523 0 0 1 .192.408v1.728c0 .16-.056.296-.168.408a.585.585 0 0 1-.432.168h-2.184ZM112.801 30a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V18.096c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h1.992c.176 0 .312.056.408.168a.508.508 0 0 1 .168.408v11.328c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-1.992Zm6.328 0a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408V18.096c0-.16.056-.296.168-.408a.555.555 0 0 1 .408-.168h1.968c.16 0 .296.056.408.168a.555.555 0 0 1 .168.408v.984c.944-1.2 2.28-1.8 4.008-1.8 1.472 0 2.64.488 3.504 1.464.864.96 1.296 2.272 1.296 3.936v6.744c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-2.112a.555.555 0 0 1-.408-.168.555.555 0 0 1-.168-.408v-6.6c0-.944-.232-1.672-.696-2.184-.448-.528-1.104-.792-1.968-.792-.848 0-1.52.264-2.016.792-.48.528-.72 1.256-.72 2.184v6.6c0 .16-.056.296-.168.408a.508.508 0 0 1-.408.168h-2.112Zm20.04 5.28c-1.424 0-2.576-.24-3.456-.72-.88-.464-1.504-1-1.872-1.608-.368-.608-.552-1.128-.552-1.56 0-.144.056-.272.168-.384a.611.611 0 0 1 .408-.168h2.088c.144 0 .264.032.36.096.112.08.2.216.264.408.16.432.416.792.768 1.08.368.304.936.456 1.704.456.96 0 1.664-.216 2.112-.648.464-.432.696-1.176.696-2.232v-1.632c-.88 1.04-2.112 1.56-3.696 1.56-1.664 0-2.92-.512-3.768-1.536-.832-1.024-1.28-2.4-1.344-4.128l-.024-.648.024-.648c.064-1.696.52-3.064 1.368-4.104.848-1.056 2.096-1.584 3.744-1.584.848 0 1.592.16 2.232.48.64.32 1.176.76 1.608 1.32v-.96c0-.176.056-.32.168-.432a.555.555 0 0 1 .408-.168h1.944c.16 0 .296.064.408.192a.555.555 0 0 1 .168.408l.024 11.568c0 1.776-.496 3.152-1.488 4.128s-2.48 1.464-4.464 1.464Zm-.12-7.896c.912 0 1.592-.288 2.04-.864.464-.576.72-1.28.768-2.112.016-.128.024-.392.024-.792a7.7 7.7 0 0 0-.024-.768c-.048-.848-.304-1.56-.768-2.136-.448-.576-1.128-.864-2.04-.864-1.728 0-2.64 1.064-2.736 3.192l-.024.576c0 1.136.2 2.048.6 2.736.416.688 1.136 1.032 2.16 1.032Z" fill="#555"/><path d="M5.97 6.946c.645 0 1.171-.526 1.171-1.171S6.615 4.603 5.97 4.603a1.172 1.172 0 1 0 0 2.343ZM9.596 24.783v2.25a10.674 10.674 0 0 1 6.298-2.048c2.292 0 4.473.725 6.297 2.048v-2.25c0-1.889.948-3.558 2.387-4.563a4.498 4.498 0 0 0-4.485-4.265h-8.399A4.498 4.498 0 0 0 7.21 20.22a5.565 5.565 0 0 1 2.386 4.563ZM22.822 12.53H8.915v1.897h13.907V12.53Z" fill="#85B839"/><path d="M22.191 29.026a9.157 9.157 0 0 0-6.297-2.498c-2.361 0-4.582.89-6.298 2.498v2.055h12.595v-2.055ZM25.551 6.946c.645 0 1.172-.526 1.172-1.171s-.527-1.172-1.172-1.172a1.172 1.172 0 0 0 0 2.343ZM15.912 3.778a1.89 1.89 0 0 0 1.889-1.89A1.89 1.89 0 0 0 15.91 0a1.89 1.89 0 0 0-1.888 1.889 1.89 1.89 0 0 0 1.889 1.889Z" fill="#85B839"/><path d="M27.76 20.757a4.03 4.03 0 0 0-4.026 4.026v7.837H8.054v-7.837a4.03 4.03 0 0 0-4.027-4.026A4.03 4.03 0 0 0 0 24.783a4.03 4.03 0 0 0 4.027 4.027h.771v7.069h22.191v-7.07h.772a4.03 4.03 0 0 0 4.026-4.026 4.03 4.03 0 0 0-4.026-4.026ZM4.028 26.034a1.252 1.252 0 1 1 .001-2.5 1.252 1.252 0 0 1-.001 2.5Zm23.734 0a1.25 1.25 0 0 1-1.251-1.25 1.25 1.25 0 1 1 2.502 0 1.25 1.25 0 0 1-1.251 1.25ZM8.698 10.988h14.337a7.29 7.29 0 0 0 1.662-2.928 6.524 6.524 0 0 1-3.032.757 6.523 6.523 0 0 1-5.8-3.547c-1.085 2.102-3.277 3.547-5.8 3.547-1.071 0-2.106-.26-3.028-.742a7.392 7.392 0 0 0 1.661 2.913ZM9.596 37.422H8.053v1.543h1.543v-1.543ZM23.734 37.422h-1.543v1.543h1.543v-1.543Z" fill="#85B839"/></svg>
+      </a>
+
+      <form class="header__form" action="https://echo.academy.ru">
+        <input class="header__form-input" type="search" placeholder="Search...">
+        <select  name="select">
+          <option value="categorie">categorie</option>
+          <option value="all">All</option>
+          <option value="tabble">Tabble</option>
+        </select>
+        <button class="header__form-btn">
+          <img src="./img/search.png" width="16" alt="">
+        </button>
+      </form>
+
+      <div class="header__box">
+        <img src="./img/Shop.png" alt="">
+        <img src="./img/Notification.png" alt="">
+        <img src="./img/avatar.png" alt="">
+      </div>
+    </div>
+  </header>
+
+<!-- Main -->
+  <main class="main">
+    <!-- main menu -->
+    <div class="main__menu">
+      <div class="container ">
+        <div class="menu-block">
+          <span class="main__menu-all droppdownAll" onclick="clickSpan()">
+            <img src="./img/menu.png" alt="">
+            ALL COLLECTIONS
+          </span>
+  
+          <ul class="main__menu-list menu-list">
+            <li class="menu-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">shop</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">about</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- main contant -->
+    <div class="main__content">
+      <div class="container content">
+        <ul class="content__list">
+          <li class="content__item">
+            <a href="#">All</a>
+          </li>
+          <li class="content__item">
+            <a href="#">New Arrivals</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Hot Sale</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Furniture</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Amrature</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Tabble</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Chair</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Sofa</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Mirrors</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Stools</a>
+          </li>
+          <li class="content__item">
+            <a href="#">Benches</a>
+          </li>
+        </ul>
+
+        <!-- Swiper -->
+        <div class="corusel">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+
+                <div class="slide-box">
+                  <span class="slider-info">
+                    TOP COLLECTIONS 2022
+                  </span>
+                  <h2 class="slider-title">
+                    We Serve Your 
+                    Dream Furniture
+                  </h2>
+                  <p class="slider-text">
+                    Get 50% off all products
+                  </p>
+                  <button class="slider-btn">SHOP NOW</button>
+                </div>
+
+                <div>
+                  <img src="./img/slide1.png" width="374" height="374" alt="">
+                </div>
+
+                <ul class="slider-list">
+                  <li class="slider-item">
+                    <img src="./img/slider2.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider3.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider4.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-box">
+                  <span class="slider-info">
+                    TOP COLLECTIONS 2022
+                  </span>
+                  <h2 class="slider-title">
+                    We Serve Your 
+                    Dream Furniture
+                  </h2>
+                  <p class="slider-text">
+                    Get 50% off all products
+                  </p>
+                  <button class="slider-btn">SHOP NOW</button>
+                </div>
+
+                <div>
+                  <img src="./img/slide1.png" width="374" height="374" alt="">
+                </div>
+
+                <ul class="slider-list">
+                  <li class="slider-item">
+                    <img src="./img/slide1.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider3.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider4.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-box">
+                  <span class="slider-info">
+                    TOP COLLECTIONS 2022
+                  </span>
+                  <h2 class="slider-title">
+                    We Serve Your 
+                    Dream Furniture
+                  </h2>
+                  <p class="slider-text">
+                    Get 50% off all products
+                  </p>
+                  <button class="slider-btn">SHOP NOW</button>
+                </div>
+
+                <div>
+                  <img src="./img/slide1.png" width="374" height="374" alt="">
+                </div>
+
+                <ul class="slider-list">
+                  <li class="slider-item">
+                    <img src="./img/slider2.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slide1.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider4.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-box">
+                  <span class="slider-info">
+                    TOP COLLECTIONS 2022
+                  </span>
+                  <h2 class="slider-title">
+                    We Serve Your 
+                    Dream Furniture
+                  </h2>
+                  <p class="slider-text">
+                    Get 50% off all products
+                  </p>
+                  <button class="slider-btn">SHOP NOW</button>
+                </div>
+
+                <div>
+                  <img src="./img/slide1.png" width="374" height="374" alt="">
+                </div>
+
+                <ul class="slider-list">
+                  <li class="slider-item">
+                    <img src="./img/slider2.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slider3.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                  <li class="slider-item">
+                    <img src="./img/slide1.png" width="40" height="53" alt="">
+                    <span>$120</span>
+                    <b>	Home Alisa Sofa</b>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- list -->
+    <div class="container">
+      <ul class="main__bag bag">
+        <li class="bag__item">
+          <img src="./img/bag1.png" width="58" alt="">
+          <div class="bag__item-box">
+            <h2>Free Shipping</h2>
+            <span>Orders over $100</span>
+          </div>
+        </li>
+        <li class="bag__item">
+          <img src="./img/bag2.png" width="58" alt="">
+          <div class="bag__item-box">
+            <h2>Smart Gift Card</h2>
+            <span>Buy $1000 to get card</span>
+          </div>
+        </li>
+        <li class="bag__item">
+          <img src="./img/bag3.png" width="58" alt="">
+          <div class="bag__item-box">
+            <h2>Quick Payment</h2>
+            <span>100% secure payment</span>
+          </div>
+        </li>
+        <li class="bag__item">
+          <img src="./img/bag4.png" width="58" alt="">
+          <div class="bag__item-box">
+            <h2>24/7 Support</h2>
+            <span>Quick support</span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- cards -->
+      <div class="main__card card">
+        <div class="card__basic">
+          <h2 class="card__basic-title">
+            Modern Furniture Collections
+          </h2>
+          <span class="card__basic-sum">
+            Starting from $500
+          </span>
+          <a href="#" class="card__basic-link">
+            Read more ->
+          </a>
+        </div>
+
+        <div class="card__box">
+          <div class="card__box-one">
+            <h2 class="card__box-title">
+              Geometric Bookcase
+            </h2>
+            <span class="card__box-sum">
+              Up to 20% discount
+            </span>
+            <a href="#" class="card__box-link">
+              Read more ->
+            </a>
+          </div>
+          <div class="card__box-two">
+            <h2 class="card__box-title">
+              Minimal Sofa collections 
+            </h2>
+            <span class="card__box-sum">
+              Sale upto 40% discount
+            </span>
+            <a href="#" class="card__box-link">
+              Read more ->
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TRENDING -->
+    <section class="trending">
+      <div class="container">
+        <h2 class="trending__title">
+          trending
+        </h2>
+        <ul class="trending__menu">
+          <li class="trending__menu-item">
+            Top Products
+          </li>
+          <li class="trending__menu-item">
+            New Arrivals
+          </li>
+          <li class="trending__menu-item">
+            Best Sellers
+          </li>
+        </ul>
+
+        <ul class="trending__list">
+          
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  
+  <template id="trending-card-templete">
+    <li class="trending__list-item">
+      <span class="trending__list-page">NEW</span>
+      <img class="trending__img" src="" width="269" height="287" alt="">
+      <div class="opasity"></div>
+      <ul class="trending__hrefs">
+        <li class="trending__hrefs-item">
+          <img src="./img/heart.png" alt="">
+        </li>
+        <li class="trending__hrefs-item">
+          <img src="./img/refresh.png" width="20" alt="">
+        </li>
+        <li class="trending__hrefs-item">
+          <img src="./img/quti.png" alt="">
+        </li>
+        <li class="trending__hrefs-item">
+          <img src="./img/koz.png" alt="">
+        </li>
+      </ul>
+      <div class="trending__list-box">
+        <span class="cate">
+          
+        </span>
+        <h3 class="trending__list-title">
+          
+        </h3>
+        <div>
+          <span class="trending__sum"></span>
+          <del class="trending__delsum"></del>
+          <span>
+            &star;&star;&star;&star;&star;
+          </span>
+        </div>
+      </div>
+    </li>
+  </template>
+
+      <script src="./js/itilist.js"></script>
+      <script src="./js/cards.js"></script>
+      <script src="js/main.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>

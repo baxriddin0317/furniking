@@ -1,0 +1,126 @@
+// bag 
+.bag {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 15px;
+        }
+        &-box {
+            h2 {
+                margin: 0;
+                font-weight: 500;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                color: #555555;
+                text-transform: capitalize;
+            }
+            span {
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                color: rgba(81, 81, 81, 0.71);
+            }
+        }
+    }
+}
+
+// card
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 111px;
+
+
+    &__basic {
+        background: url("../../img/card1.jpg");
+        width: 669px;
+        height: 511px;
+        padding: 49px 31px;
+
+        &-title {
+            font-weight: bold;
+            font-size: 22px;
+            margin: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            color: #555555;
+        }
+
+        &-sum {
+            font-weight: 600;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            color: $bg-color;
+            margin-bottom: 13px;
+        }
+
+        &-link {
+            font-weight: normal;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #757575;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+
+        &-one {
+            background: url("../../img/card2.jpg");
+            margin-bottom: 17px;
+            padding: 57px 24px;
+        }
+
+        &-two {
+            background: url("../../img/card3.png");
+            padding: 37px 24px;
+        }
+
+        &-one,
+        &-two{
+            width: 485px;
+            height: 247px;
+        }
+
+        &-title{
+            font-weight: 600;
+            font-size: 22px;
+            margin: 0;
+            margin-bottom: 8px;
+            color: #555555;
+        }
+
+        &-sum {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 9px;
+            display: flex;
+            align-items: center;
+            color: #7AC751;
+        }
+
+        &-link {
+            font-size: 16px;
+            line-height: 26px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #757575;
+        }
+    }
+}
