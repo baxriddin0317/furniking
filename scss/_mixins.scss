@@ -6,6 +6,14 @@
   list-style-type: none;
 }
 
+// Title stillarini olib tawlaw
+@mixin reset-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  color: #555555;
+}
+
 
 // Psevdoelementdagi uchburchak
 

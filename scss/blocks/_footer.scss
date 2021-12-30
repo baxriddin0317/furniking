@@ -1,0 +1,67 @@
+// FOOTER
+
+.footer {
+
+    &__block {
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+        margin-bottom: 51px;
+
+        &-box {
+            width: 313px;
+
+            p {
+                font-size: 16px;
+                line-height: 32px;
+                color: #555555;
+            }
+        }
+
+        &-links {
+            display: flex;
+            justify-content: space-between;
+            width: 173px;
+
+            svg {
+                cursor: pointer;
+
+                &:hover path {
+                    fill: $bg-color;
+                }
+            }
+        }
+
+        &-list {
+            display: flex;
+            @include reset-list;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+
+            b, a {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 40px;
+                letter-spacing: 0.01em;
+                color: #555555;
+            }
+
+            a {
+                font-weight: normal;
+                text-decoration: none;
+                transition: transform .3s ease-in;
+                &:hover {
+                    color: $bg-color;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &-item ~ &-item {
+            margin-left: 180px;
+        }
+    }
+}

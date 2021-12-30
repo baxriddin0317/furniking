@@ -1,20 +1,17 @@
     // SAYS
 
 .says{
+    margin-bottom: 115px;
     &__title {
         text-align: center;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 45px;
+        @include reset-title;        
         text-transform: uppercase;
-        color: #555555;
         margin: 0;
         margin-bottom: 90px;
     }
 
     &__list {
-        list-style-type: none;
-        padding: 0;
+        @include reset-list;
 
         &-item {
             background: #F8FAFB;
