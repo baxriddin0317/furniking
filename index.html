@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -382,10 +383,146 @@
         </ul>
 
         <ul class="trending__list">
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- OFFER SECTION  -->
+    <seciton class="offer">
+      <div class="container">
+        <h1 class="offer__title">
+          SPECIAL OFFER
+        </h1>
+        <div class="offer__block">
+          <div class="offer__block-box offer-one">
+            <div class="offer__content">
+              <h3 class="offer__content-title">
+                Living Room Furniture
+              </h3>
+              <p class="offer__content-text">
+                You don't have a chair. Are you ready for growth? Shop with us 40% discount!
+              </p>
+              <div class="offer__content-div">
+                <span>$150</span>
+                <del>$300</del>
+                <button class="offer__content-btn">
+                  shop now
+                </button>
+              </div>
+              <ul class="offer__content-list">
+                <li class="offer__content-item">
+                  <b>10</b>
+                  <small>days</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>15</b>
+                  <small>hrs</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>30</b>
+                  <small>min</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>22</b>
+                  <small>secs</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="offer__block-box offer-two">
+            <div class="offer__content">
+              <h3 class="offer__content-title">
+                Modern chair
+              </h3>
+              <p class="offer__content-text">
+                Hot chairs of the modern era are now available in our stock.
+              </p>
+              <div class="offer__content-div">
+                <span>$75</span>
+                <del>$150</del>
+                <button class="offer__content-btn">
+                  shop now
+                </button>
+              </div>
+              <ul class="offer__content-list">
+                <li class="offer__content-item">
+                  <b>15</b>
+                  <small>days</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>17</b>
+                  <small>hrs</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>20</b>
+                  <small>min</small>
+                </li>
+                <li class="offer__content-item">
+                  <b>02</b>
+                  <small>secs</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </seciton>
+
+    <!-- PRODUCTS section  -->
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title">
+          OUR PRODUCTS
+        </h2>
+        <ul class="trending__menu">
+          <li class="trending__menu-item js-all">
+            All Products
+          </li>
+          <li class="trending__menu-item js-new">
+            New Arrivals
+          </li>
+          <li class="trending__menu-item js-best">
+            Best Sellers
+          </li>
+          <li class="trending__menu-item js-today">
+            Todays Deals
+          </li>
+        </ul>
+        
+        <ul class="products__list myProduct">
           
         </ul>
       </div>
     </section>
+
+    <!-- SAYS -->
+    <section class="says">
+      <div class="container">
+        <h2 class="says__title">
+          What Our Customer Says
+        </h2>
+        <ul class="says__list">
+          <li class="says__list-item">
+            <img class="says__list-img" src="./img/joly.png" width="88" height="88" alt="">
+            <p class="says__list-text">
+              I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach., also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.
+            </p>
+            <h4 class="says__list-title">
+              Angelina Joly
+            </h4>
+            <small class="says__list-small">Co-founder</small>
+          </li>
+        </ul>
+        <span class="says__prev">
+          <img src="./img/prev.png" alt="">
+        </span>
+        <span class="says__next">
+          <img src="./img/next.png" alt="">
+        </span>
+      </div>
+    </section>
+
   </main>
 
 
@@ -427,12 +564,51 @@
     </li>
   </template>
 
+  <template id="products-card-templete">
+    <li class="products__list-item">
+      <span class="products__list-page">NEW</span>
+      <img class="products__img" src="" width="269" height="287" alt="">
+      <div class="opasity"></div>
+      <ul class="products__hrefs">
+        <li class="products__hrefs-item">
+          <img src="./img/heart.png" alt="">
+        </li>
+        <li class="products__hrefs-item">
+          <img src="./img/refresh.png" width="20" alt="">
+        </li>
+        <li class="products__hrefs-item">
+          <img src="./img/quti.png" alt="">
+        </li>
+        <li class="products__hrefs-item">
+          <img src="./img/koz.png" alt="">
+        </li>
+      </ul>
+      <div class="products__list-box">
+        <span class="cate">
+          
+        </span>
+        <h3 class="products__list-title">
+          
+        </h3>
+        <div>
+          <span class="products__sum"></span>
+          <del class="products__delsum"></del>
+          <span>
+            &star;&star;&star;&star;&star;
+          </span>
+        </div>
+      </div>
+    </li>
+  </template>
+
       <script src="./js/itilist.js"></script>
       <script src="./js/cards.js"></script>
+      <script src="./js/product.js"></script>
       <script src="js/main.js"></script>
+      
       <!-- Swiper JS -->
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+  
       <!-- Initialize Swiper -->
       <script>
         var swiper = new Swiper(".mySwiper", {
@@ -447,5 +623,6 @@
           },
         });
       </script>
+
 </body>
 </html>

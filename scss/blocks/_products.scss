@@ -1,33 +1,10 @@
-.trending {
-    margin-bottom: 90px;
+.products {
     &__title {
-        text-align: center;
         font-weight: bold;
         font-size: 36px;
         line-height: 45px;
+        text-align: center;
         color: #555555;
-        text-transform: uppercase;
-        margin-bottom: 45px;
-    }
-
-    &__menu{
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        justify-content: space-evenly;
-        margin-bottom: 73px;
-
-        &-item {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 30px;
-            color: #C2C2C2;
-            cursor: pointer;
-
-            &:hover {
-                color: $bg-color;
-            }
-        }
     }
 
     &__list{
@@ -38,25 +15,28 @@
         padding: 0;
         flex-wrap: wrap;
         margin-bottom: 45px;
-
+        height: 900px;
+        overflow: hidden;
+        margin-bottom: 100px;
+    
         &-item {
             position: relative;
             width: 270px;
             margin-bottom: 45px;
             overflow: hidden;
-
+    
             img {
                 margin-bottom: 15px;
             }
-
-            .trending__hrefs {
+    
+            .products__hrefs {
                 list-style-type: none;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
                 right: 10px;
                 bottom: 135px;
-
+    
                 &-item {
                     width: 38.85px;
                     height: 38.89px;
@@ -68,7 +48,7 @@
                     transform: translateX(50px);
                     box-shadow: 0px 2px 33px rgba(0, 0, 0, 0.09);
                 }
-
+    
                 &-item:nth-child(1) {
                     transition: 0.5s transform ease-in-out;
                 }
@@ -82,12 +62,12 @@
                     transition: 0.2s transform ease-in-out;
                 }
             }
-
+    
             &:hover {
-                .trending__hrefs-item {
+                .products__hrefs-item {
                     transform: translateX(0px);
                 }
-
+    
                 .opasity {
                     position: absolute;
                     top: 0;
@@ -97,7 +77,7 @@
                 }
             }
         }
-
+    
         &-page {
             position: absolute;
             width: 44px;
@@ -112,7 +92,7 @@
             color: #FFFFFF;
             z-index: 99;
         }
-
+    
         &-box {
             .cate {
                 font-size: 14px;
@@ -120,11 +100,11 @@
                 text-transform: uppercase;
                 color: rgba(117, 117, 117, 0.71);
             }
-
+    
             div {
                 display: flex;
                 justify-content: space-between;
-
+    
                 span {
                     font-weight: bold;
                     font-size: 18px;
@@ -140,11 +120,11 @@
                 }
             }
         }
-
+    
         &-title {
             font-size: 20px;
             margin: 9px 0;
             color: #555555;
         }
-    }   
+    }  
 }

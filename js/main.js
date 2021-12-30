@@ -44,4 +44,37 @@ const rednerCard = (array) => {
 
 rednerCard(cards);
 
-console.log(elUlCard);
+
+// product ulga malumotlarni yozamiz
+var elProductUl = document.querySelector(".products__list");
+var elProductTemplete = $_("#products-card-templete").content;
+
+//types
+
+
+
+const creatProductElement = (obj) => {
+    var elNewTemplete = elProductTemplete.cloneNode(true);
+
+    $_(".products__img", elNewTemplete).src = obj.imgUrl;
+    $_(".cate", elNewTemplete).innerHTML = obj.categorie;
+    $_(".products__list-title", elNewTemplete).innerHTML = obj.title;
+    $_(".products__sum", elNewTemplete).textContent = obj.sum;
+    $_(".products__delsum", elNewTemplete).innerHTML = obj.delSum;
+
+    return elNewTemplete;
+}
+
+const rednerProduct = (array) => {
+    elProductUl.innerHTML = "";
+
+    var elUlFragment = document.createDocumentFragment();
+
+    array.map((obj) => {
+        elUlFragment.appendChild(creatElement(obj));
+    });
+
+    elProductUl.appendChild(elUlFragment);
+}
+
+rednerProduct(products);
