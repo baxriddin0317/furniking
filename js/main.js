@@ -78,3 +78,35 @@ const rednerProduct = (array) => {
 }
 
 rednerProduct(products);
+
+
+
+
+// Modal oyna uchun js kodlari
+// elementlarni target qilib olamiz
+var modalBg = document.querySelector(".modal-bg");
+var modalcontent = document.querySelector(".modal");
+var modalBtn = document.querySelector(".btn-js");
+var closeBtn = document.querySelector(".close-btn");
+
+var addBtn = document.querySelector("#modal-btn");
+
+addBtn.addEventListener("click", () => {
+    modalBg.classList.add("modal-active");
+});
+
+closeBtn.addEventListener("click", () => {
+    modalBg.classList.remove("modal-active");
+});
+
+window.addEventListener("click", (e) => {
+    if(e.target == modalBg) {
+      modalBg.classList.remove("modal-active");
+    }
+})
+
+modalBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    modalBg.classList.remove("modal-active");
+})
