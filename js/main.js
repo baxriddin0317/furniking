@@ -85,13 +85,18 @@ var elNewMenu = document.querySelector(".js-new");
 var elBestMenu = document.querySelector(".js-best");
 var elTodayMenu = document.querySelector(".js-today");
 var newProducts = [];
+elAllMenu.style.color = '#7AC751';
 
 // all type uchun
 elAllMenu.addEventListener("click", () => {
     rednerProduct(products);
     elPageSum.innerHTML = Math.ceil(products.length / 8);
     len = Math.ceil(products.length / 8) * 874;
-})
+    elAllMenu.style.color = '#7AC751';
+    elNewMenu.style.color = '';
+    elBestMenu.style.color = '';
+    elTodayMenu.style.color = '';
+});
 //type new bolganlari
 elNewMenu.addEventListener("click", () => {
     newProducts = products.filter((obj) => {
@@ -102,6 +107,10 @@ elNewMenu.addEventListener("click", () => {
     rednerProduct(newProducts);
     elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
     len = Math.ceil(newProducts.length / 8) * 874;
+    elAllMenu.style.color = '';
+    elNewMenu.style.color = '#7AC751';
+    elBestMenu.style.color = '';
+    elTodayMenu.style.color = '';
 });
 // type best bolganlari
 elBestMenu.addEventListener("click", () => {
@@ -114,6 +123,10 @@ elBestMenu.addEventListener("click", () => {
     rednerProduct(newProducts);
     elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
     len = Math.ceil(newProducts.length / 8) * 874;
+    elAllMenu.style.color = '';
+    elBestMenu.style.color = '#7AC751';
+    elNewMenu.style.color = '';
+    elTodayMenu.style.color = '';
 });
 // type today bolganlari
 elTodayMenu.addEventListener("click", () => {
@@ -126,6 +139,10 @@ elTodayMenu.addEventListener("click", () => {
     rednerProduct(newProducts);
     elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
     len = Math.ceil(newProducts.length / 8) * 874;
+    elAllMenu.style.color = '';
+    elTodayMenu.style.color = '#7AC751';
+    elBestMenu.style.color = '';
+    elNewMenu.style.color = '';
 });
 
 
