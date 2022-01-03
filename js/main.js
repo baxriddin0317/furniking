@@ -79,6 +79,56 @@ const rednerProduct = (array) => {
 
 rednerProduct(products);
 
+// menu 
+var elAllMenu = document.querySelector(".js-all");
+var elNewMenu = document.querySelector(".js-new");
+var elBestMenu = document.querySelector(".js-best");
+var elTodayMenu = document.querySelector(".js-today");
+var newProducts = [];
+
+// all type uchun
+elAllMenu.addEventListener("click", () => {
+    rednerProduct(products);
+    elPageSum.innerHTML = Math.ceil(products.length / 8);
+    len = Math.ceil(products.length / 8) * 874;
+})
+//type new bolganlari
+elNewMenu.addEventListener("click", () => {
+    newProducts = products.filter((obj) => {
+        if(obj.type == "new"){
+            return obj;
+        }
+    });
+    rednerProduct(newProducts);
+    elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
+    len = Math.ceil(newProducts.length / 8) * 874;
+});
+// type best bolganlari
+elBestMenu.addEventListener("click", () => {
+    newProducts = products.filter((obj) => {
+        if(obj.type == "best"){
+            return obj;
+        }
+    });
+
+    rednerProduct(newProducts);
+    elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
+    len = Math.ceil(newProducts.length / 8) * 874;
+});
+// type today bolganlari
+elTodayMenu.addEventListener("click", () => {
+    newProducts = products.filter((obj) => {
+        if(obj.type == "today"){
+            return obj;
+        }
+    });
+
+    rednerProduct(newProducts);
+    elPageSum.innerHTML = Math.ceil(newProducts.length / 8);
+    len = Math.ceil(newProducts.length / 8) * 874;
+});
+
+
 // next and prev btns
 var elNextBtn = document.querySelector(".next-btn");
 var elPrevBtn = document.querySelector(".prev-btn");
@@ -111,7 +161,6 @@ elPrevBtn.addEventListener("click", () => {
     elProductUl.style.transform = `translateY(-${offset}px)`;
     elPageNum.innerHTML = pageSum;
 });
-
 
 // Modal oyna uchun js kodlari
 // elementlarni target qilib olamiz
