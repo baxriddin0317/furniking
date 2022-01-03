@@ -83,23 +83,33 @@ rednerProduct(products);
 var elNextBtn = document.querySelector(".next-btn");
 var elPrevBtn = document.querySelector(".prev-btn");
 var offset = 0;
-var len = Math.ceil(products.length / 8) * 900;
-
+var len = Math.ceil(products.length / 8) * 874;
+var elPageNum = document.querySelector(".page-num");
+var elPageSum = document.querySelector(".page-sum");
+var pageSum = 1;
+elPageNum.innerHTML = pageSum;
+elPageSum.innerHTML = Math.ceil(products.length / 8);
 
 elNextBtn.addEventListener("click", () => {
-    offset += 900;
-    if(offset > len-900){
+    offset += 874;
+    pageSum += 1;
+    if(offset > len-874){
         offset = 0;
+        pageSum = 1;
     }
     elProductUl.style.transform = `translateY(-${offset}px)`;
+    elPageNum.innerHTML = pageSum;
 });
 
 elPrevBtn.addEventListener("click", () => {
-    offset -= 900;
+    offset -= 874;
+    pageSum -=1;
     if(offset < 0){
         offset = 0;
+        pageSum = 1;
     }
     elProductUl.style.transform = `translateY(-${offset}px)`;
+    elPageNum.innerHTML = pageSum;
 });
 
 
