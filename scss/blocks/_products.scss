@@ -1,10 +1,17 @@
 .products {
+    margin-bottom: 100px;
     &__title {
         font-weight: bold;
         font-size: 36px;
         line-height: 45px;
         text-align: center;
         color: #555555;
+    }
+
+    .my-corousel {
+        height: 900px;
+        overflow: hidden;
+        margin-bottom: 15px;
     }
 
     &__list{
@@ -15,9 +22,8 @@
         padding: 0;
         flex-wrap: wrap;
         margin-bottom: 45px;
-        height: 900px;
-        overflow: hidden;
-        margin-bottom: 100px;
+        transform: translateY(0px);
+        transition: transform 0.3s ease-in;
     
         &-item {
             position: relative;
@@ -127,4 +133,33 @@
             color: #555555;
         }
     }  
+
+    .corousel-box {
+        display: flex;
+        justify-content: center;
+        .prev-btn, .next-btn {
+            background: #7AC751;
+            border-radius: 2px;
+            border: none;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 12px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+
+            &:active {
+                background: #369602;
+            }
+
+            
+        }
+    }
+
+    .disabled {
+        background: #CCCCCC !important;
+    }
 }

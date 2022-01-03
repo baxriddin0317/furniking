@@ -1278,12 +1278,22 @@ body {
   color: #FFFFFF;
 }
 
+.products {
+  margin-bottom: 100px;
+}
+
 .products__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
   text-align: center;
   color: #555555;
+}
+
+.products .my-corousel {
+  height: 900px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .products__list {
@@ -1301,9 +1311,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 45px;
-  height: 900px;
-  overflow: hidden;
-  margin-bottom: 100px;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
 }
 
 .products__list-item {
@@ -1436,6 +1449,42 @@ body {
   font-size: 20px;
   margin: 9px 0;
   color: #555555;
+}
+
+.products .corousel-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.products .corousel-box .prev-btn, .products .corousel-box .next-btn {
+  background: #7AC751;
+  border-radius: 2px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.products .corousel-box .prev-btn:active, .products .corousel-box .next-btn:active {
+  background: #369602;
+}
+
+.products .disabled {
+  background: #CCCCCC !important;
 }
 
 .says {

@@ -79,7 +79,28 @@ const rednerProduct = (array) => {
 
 rednerProduct(products);
 
+// next and prev btns
+var elNextBtn = document.querySelector(".next-btn");
+var elPrevBtn = document.querySelector(".prev-btn");
+var offset = 0;
+var len = Math.ceil(products.length / 8) * 900;
 
+
+elNextBtn.addEventListener("click", () => {
+    offset += 900;
+    if(offset > len-900){
+        offset = 0;
+    }
+    elProductUl.style.transform = `translateY(-${offset}px)`;
+});
+
+elPrevBtn.addEventListener("click", () => {
+    offset -= 900;
+    if(offset < 0){
+        offset = 0;
+    }
+    elProductUl.style.transform = `translateY(-${offset}px)`;
+});
 
 
 // Modal oyna uchun js kodlari
