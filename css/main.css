@@ -1313,10 +1313,10 @@ body {
   margin-bottom: 45px;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.3s ease-in;
-  transition: -webkit-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
 }
 
 .products__list-item {
